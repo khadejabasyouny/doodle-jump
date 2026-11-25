@@ -110,8 +110,8 @@ class Player {
         }
 
         // Gravity and jumping
-        this.velocityY = 0;
-        this.gravity = 0.4;
+        this.velocityY += this.gravity;
+        this.y += this.velocityY;
     }
 
     // Check if player lands on a platform
